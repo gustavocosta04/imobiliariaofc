@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* background-color:#f9f9f9; */
+    background-color: #fffafa;
+}
+
+#video{
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 20px; /* Ajuste o espaçamento conforme necessário */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    max-width: 130px; /* ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Alteração para 'flex-end' para alinhar à direita */
+    margin-left: auto; /* Adição para ajustar a margem à esquerda */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.2em;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid white; /* adicione uma linha inferior ao passar o mouse */
+}
+
+.button-primary {
+    margin: 40px;
+    padding: 20px;
+    background-color: #fcb900;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 22px; /* Ajuste o tamanho da fonte conforme necessário */
+    border-radius: 10px;
+
+}
+
+.button-secondary {
+    margin: 40px;
+    padding: 20px;
+    background-color: rgb(136, 56, 56);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+
+}
+
+.button-primary:hover {
+    background-color: #ffd344; /* Change the background color for the primary button on hover */
+}
+
+.button-secondary:hover {
+    background-color: rgb(145, 36, 36); /* Change the background color for the secondary button on hover */
+}
+
+/* Estilo para as seções */
+section {
+    padding: 20px 20px 0 20px;
+    margin: 0;
+    border-bottom: 1px solid black; /* Adição de uma linha preta na parte inferior */
+}
+
+/* Estilo para os títulos das seções */
+h2 {
+    color: #333;
+    font-size: 30px;
+}
+
+strong {
+    color: #2c3e50; /* Cor mais escura (exemplo: cinza escuro) */
+    font-family: 'NomeDaFonte', sans-serif; /* Substitua 'NomeDaFonte' pelo nome da fonte desejada */
+    font-weight: bold; /* Garante que o texto seja exibido em negrito */
+    font-size: 22px; /* Tamanho da fonte um pouco maior (ajuste conforme necessário) */
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+#contato {
+    display: flex;
+    background-color: #d4bd9e; 
+    padding: 20px;
+    border-top: 1px solid black; 
+  }
+
+  .small-image {
+    width: 50%; /* You can adjust the percentage to your preference */
+    height: auto; /* This ensures the aspect ratio is maintained */
+    max-width: 450px; /* Set a maximum width if needed */
+    display: block; /* This removes any extra space below the image */
+    margin: 0; /* Center the image */
+    
+}
+
+.ppp {
+    margin-left: 100px; /* Adapte a margem conforme necessário */
+    float: left; /* Alinha o texto à direita da imagem */
+    font-size: 20px;
+}
+
+.small-imagem {
+    width: 50%;
+    height: auto;
+    max-width: 532px;
+    margin-left: auto; /* Alterado para 0 para alinhar à esquerda */
+    margin-right: auto; /* Alterado para auto para alinhar à direita */
+    margin-bottom: 10px; /* Ajuste o valor conforme necessário */
+
+}
+
+.small-imagemm {
+    width: 50%;
+    height: auto;
+    max-width: 532px;
+    margin-left: auto; /* Alterado para 0 para alinhar à esquerda */
+    margin-right: 0; /* Alterado para auto para alinhar à direita */
+    display: block; 
+    margin-bottom: 15px;
+}
+
+.ppp {
+    margin-left: 20px; /* Ajuste a margem conforme necessário */
+    font-size: 20px;
+    float: left; /* Alterado para left para alinhar à esquerda */
+    clear: both;
+}
+
+
+.container {
+    display: flex; /* Use flexbox para alinhar os itens lado a lado */
+    align-items: center; /* Centraliza verticalmente os itens no contêiner */
+    border-bottom: 1px solid black;
+}
+
+.pppp {
+    clear: both;
+    margin-right: 600px; /* Adapte a margem conforme necessário */
+    font-size: 20px;
+}
+
+
+
+
+.button-secondary {
+    margin: 40px auto; /* Adiciona 'auto' para centralizar horizontalmente */
+    padding: 20px;
+    background-color: rgb(136, 56, 56);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 7px; /* Adiciona bordas mais arredondadas */
+    display: block; /* Certifica-se de que o botão é exibido como bloco */
+}
+
+.button-secondary:hover {
+    background-color: rgb(145, 36, 36); 
+}
+
+
+
+
+
+h1 {
+  margin-top: 50px;
+}
+
+#texto{
+    font-size: 20px;
+    border-top: 1px solid black;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#video {
+    width: 600px; /* Largura do vídeo */
+    height: 400px; /* Altura do vídeo */
+    margin: auto; /* Centraliza o vídeo na página */
+    position: relative; /* Define posição relativa para que seja possível posicionar o quadrado dentro dele */
+    
+  }
+
+  #video::before {
+    content: ""; /* Adiciona um conteúdo vazio antes do vídeo (pseudoelemento) */
+    position: absolute; /* Define posição absoluta em relação ao elemento pai (#video) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 15px solid #D2B48C; /* Cor marrom claro */
+    box-sizing: border-box; /* Faz com que a borda seja incluída no tamanho total */
+    
+  }
+
+  video {
+    width: 100%; /* Faz com que o vídeo ocupe 100% da largura do contêiner (#video) */
+    height: 100%; /* Faz com que o vídeo ocupe 100% da altura do contêiner (#video) */
+
+  }
+
+/* ----------------------------------------------- BUTTON -------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------- MEDIA -------------------------------------------------------------------- */
+
+  @media (max-width: 620px){
+
+#video {
+    width: 400px; /* Largura do vídeo */
+    height: 250px; /* Altura do vídeo */
+    margin: auto; /* Centraliza o vídeo na página */
+    position: relative; /* Define posição relativa para que seja possível posicionar o quadrado dentro dele */
+}
+    
+nav {
+    display: flex;
+    flex-direction: column;
+
+
+  }
+    
+  .button-primary {
+    display: none;
+  }
+    
+
+  }
+
+  @media (max-width: 420px){
+
+    #video {
+        width: 300px; /* Largura do vídeo */
+        height: 200px; /* Altura do vídeo */
+        margin: auto; /* Centraliza o vídeo na página */
+        position: relative; /* Define posição relativa para que seja possível posicionar o quadrado dentro dele */
+        
+      }
+    
+      }
+
+      @media (max-width: 300px){
+
+        #video {
+            width: 250px; /* Largura do vídeo */
+            height: 200px; /* Altura do vídeo */
+            margin: auto; /* Centraliza o vídeo na página */
+            position: relative; /* Define posição relativa para que seja possível posicionar o quadrado dentro dele */
+            
+          }
+        
+          }
+
+
+
+
+

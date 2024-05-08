@@ -1,0 +1,320 @@
+/* ---------------------------------- HEADER ----------------------------------------------------------- */
+
+header {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* Para posicionamento absoluto dos elementos filhos */
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    max-width: 130px;
+    height: auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.2em;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+/* Estilos para a caixa de pesquisa */
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-container input[type=text] {
+    padding: 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+}
+
+.search-container input[type=text]:focus {
+    outline: none;
+    border-bottom: 2px solid #fcb900;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #fcb900;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para o botão Login/Cadastro */
+.login-cadastro-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #fcb900;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.login-cadastro-button:hover {
+    background-color: #ffd344;
+}
+
+/* Estilos para o container do botão de contato */
+.contact-button-container {
+    position: absolute;
+    top: 20px; /* Ajuste conforme necessário */
+    right: 20px; /* Ajuste conforme necessário */
+}
+
+/* Estilos para o botão de contato */
+.contact-button {
+    background-color: #fcb900; /* Cor amarela */
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.contact-button:hover {
+    background-color: #ffd344; /* Cor amarela clara ao passar o mouse */
+}
+
+/* ---------------------------------- SOBRE ----------------------------------------------------------- */
+
+.small-imagemm {
+    width: 100%;
+    max-width: 532px;
+    margin-bottom: 20px;
+    border-left: 1px solid black;
+}
+
+.pppp {
+    margin-left: 1px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#sobre {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-destaques {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sobre-destaques h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.sobre-destaques ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sobre-destaques li {
+    margin-bottom: 10px;
+}
+
+.imagens {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+
+/* -------------------------------------- EMPREENDIMENTOS------------------------------------------------------- */
+
+#empreendimento {
+    margin-top: 20px;
+}
+
+#empreendimento h2 {
+    margin-top: 0;
+}
+
+#empreendimento .box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2; /* Cor de fundo branco meio gelo */
+}
+
+#empreendimento .small-image {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+#empreendimento .ppp {
+    margin: 0;
+}
+
+#empreendimento .button-secondary {
+    background-color: #fcb900;
+    color: #000; /* Cor do texto preto */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block; /* Garante que o botão tenha as dimensões especificadas */
+    width: 150px; /* Defina uma largura fixa para o botão */
+    height: 50px; /* Defina uma altura fixa para o botão */
+    text-align: center; /* Centralize o texto */
+    line-height: 30px; /* Centralize verticalmente o texto */
+}
+
+#empreendimento .button-secondary:hover {
+    background-color: #ffd344;
+}
+
+#empreendimento .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#empreendimento .container .ppp {
+    margin: 0 auto;
+    margin-left: 2px; /* Ajuste da margem esquerda para alinhar com a imagem */
+}
+
+/* ---------------------------------- FOOTER ----------------------------------------------------------- */
+
+#contato {
+    display: flex;
+    background-color: #d4bd9e;
+    padding: 20px;
+}
+
+.small-imagem {
+    width: 50%;
+    height: auto;
+    max-width: 532px;
+    margin-left: auto; /* Alterado para 0 para alinhar à esquerda */
+    margin-right: auto; /* Alterado para auto para alinhar à direita */
+    margin-bottom: 10px; /* Ajuste o valor conforme necessário */
+}
+
+/* --------------------------------------- MEDIA QUERY ------------------------------------------------------- */
+
+@media (max-width: 1400px) {
+
+    #sobre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .small-imagemm {
+        width: 95%;
+        height: auto;
+        max-width: 532px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 15px;
+        border-left: 1px solid black;
+    }
+
+    .pppp {
+        clear: both;
+        margin-left: 20px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .button-primary {
+        display: none;
+    }
+
+    .small-imagemm {
+        width: 95%;
+        height: auto;
+        max-width: 532px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 15px;
+        border-left: 1px solid black;
+    }
+
+    .small-image {
+        width: 90%;
+        height: auto;
+        max-width: 450px;
+        display: block;
+        margin: 0;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid black;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .small-imagemm {
+        width: 95%;
+        height: auto;
+        max-width: 532px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 15px;
+        border-left: 1px solid black;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .small-imagemm {
+        width: 95%;
+        height: auto;
+        max-width: 532px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 15px;
+        border-left: 1px solid black;
+    }
+}

@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Cor de fundo padrão do site */
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: #fff; /* Cor de fundo do contêiner de login */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333; /* Cor do texto */
+}
+
+.login-form label {
+    font-weight: bold;
+    color: #333; /* Cor do texto */
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Cor da borda */
+    border-radius: 5px;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forgot-password {
+    color: #fcb900; /* Cor do link 'Esqueci a senha' */
+    text-decoration: none;
+}
+
+.login-button {
+    padding: 10px 20px;
+    background-color: #fcb900; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #ffd344; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.signup-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signup-link p {
+    margin-bottom: 10px;
+    color: #333; /* Cor do texto */
+}
+
+.signup-link a {
+    color: #fcb900; /* Cor do link de cadastro */
+    text-decoration: none;
+    font-weight: bold;
+}
